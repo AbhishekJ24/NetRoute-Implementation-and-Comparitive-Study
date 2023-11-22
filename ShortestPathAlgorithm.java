@@ -1,3 +1,8 @@
+/* We represent a node using a map which has map inside of it
+It is of the form {Current Node: {neighbour 1: distance b/w neighbor 1}, {neighbour 2: distance b/w neighbor 2},.... n}
+...... upto n neighbours
+*/
+
 import java.io.*;
 import java.util.*;
 
