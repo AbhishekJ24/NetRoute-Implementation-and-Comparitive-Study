@@ -32,3 +32,7 @@ article {
     height: 40px;
     color: rgb(139, 138, 138);
 }
+
+.social-icons a svg{
+    padding: 2px;
+}
