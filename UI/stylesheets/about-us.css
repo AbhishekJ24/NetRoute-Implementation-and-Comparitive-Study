@@ -2,17 +2,17 @@ body {
     background-color: var(--primary-color);
 }
 
-.gap{
+.gap {
     height: 70px;
 }
 
-.heading{
+.heading {
     text-align: center;
     font-weight: 500;
     font-size: 48px;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -24,13 +24,13 @@ section {
     border: 2px solid rgb(219, 218, 218);
     border-radius: 20px;
     text-align: center;
-    margin:1vw;
+    margin: 1vw;
 }
 
 .cards section div img {
     justify-content: center;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .name {
@@ -44,15 +44,18 @@ article {
     color: rgb(139, 138, 138);
 }
 
-.social-icons a img{
-    padding: 1px;
+.social-icons a img {
+    padding: 2px;
 }
-.gmail-ic img{
-    width: 12%;
+
+.gmail-ic img {
+    width: 34px;
 }
-.linkedin-ic img{
-    width: 9%;
+
+.linkedin-ic img {
+    width: 34px;
 }
-.github-ic img{
-    width: 9%;
+
+.github-ic img {
+    width: 28px;
 }
