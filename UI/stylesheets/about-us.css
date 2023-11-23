@@ -1,7 +1,3 @@
-body {
-    background-color: var(--primary-color);
-}
-
 .gap {
     height: 70px;
 }
@@ -13,9 +9,12 @@ body {
 .heading {
     text-align: center;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 50px;
 }
 
+.heading span{
+    color: var(--font-color-2);
+}
 .cards {
     display: flex;
     justify-content: center;
@@ -23,12 +22,12 @@ body {
 }
 
 .cards section {
-    background-color: white;
+    background-color: var(--navbar-footer-color);
     width: 335px;
-    border: 2px solid rgb(219, 218, 218);
     border-radius: 20px;
     text-align: center;
     margin: 1vw;
+    border-bottom: 2px solid var(--font-color-2);
 }
 
 .cards section article{
@@ -40,6 +39,7 @@ body {
 .cards section div > img {
     justify-content: center;
     height: 250px;
+    margin-top: 30px;
     border-radius: 10%;
 }
 
@@ -51,7 +51,7 @@ body {
 article {
     font-size: 15px;
     height: 90px;
-    color: rgb(139, 138, 138);
+    color: var(--font-color-1);
 }
 
 .social-icons a img {
