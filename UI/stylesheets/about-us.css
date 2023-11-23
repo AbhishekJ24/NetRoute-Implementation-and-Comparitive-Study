@@ -6,6 +6,10 @@ body {
     height: 70px;
 }
 
+.gap2{
+    height: 20px;
+}
+
 .heading {
     text-align: center;
     font-weight: 500;
@@ -18,7 +22,7 @@ body {
     padding: 10px;
 }
 
-section {
+.cards section {
     background-color: white;
     width: 335px;
     border: 2px solid rgb(219, 218, 218);
@@ -27,7 +31,13 @@ section {
     margin: 1vw;
 }
 
-.cards section div img {
+.cards section article{
+    overflow: scroll;
+    margin: 20px;
+    text-align: justify;
+}
+
+.cards section div > img {
     justify-content: center;
     height: 250px;
     border-radius: 10%;
@@ -45,17 +55,10 @@ article {
 }
 
 .social-icons a img {
-    padding: 2px;
+    padding: 0px 5px;
+    width: 18px;
 }
 
-.gmail-ic img {
-    width: 34px;
-}
-
-.linkedin-ic img {
-    width: 34px;
-}
-
-.github-ic img {
-    width: 28px;
+.social-icons a{
+    text-decoration: none;
 }
