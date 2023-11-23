@@ -2,7 +2,7 @@
 
 :root {
     --main-body-color: #0B0C10;
-    --navbar-footer-color: #1F2833;
+    --navbar-footer-color: rgba(27, 35, 46);
     --font-color-1: #C5C6C7;
     --font-color-2: #66FCF1;
     --hover-color-1: #45A29E;
@@ -13,6 +13,16 @@
     font-family: Poppins;
     margin: 0;
     padding: 0;
+}
+
+.back img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 10%;
 }
 
 body {
@@ -34,6 +44,7 @@ body {
 .nav-bar ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .nav-bar ul li a:hover {
@@ -41,7 +52,8 @@ body {
 }
 
 .nav-bar ul li img {
-    width: 300px;
+    width: 200px;
+    padding: 18px;
 }
 
 .nav-bar ul li a {
@@ -110,11 +122,18 @@ main .about-project {
     height: 40px;
     margin: 13px;
     background-color: var(--navbar-footer-color);
+    display: flex;
+    align-items: center;
 }
 
 footer {
+    display: flex;
     background-color: var(--navbar-footer-color);
     width: 100%;
     height: 100px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }

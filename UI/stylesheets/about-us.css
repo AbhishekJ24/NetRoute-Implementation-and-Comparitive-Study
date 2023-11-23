@@ -2,7 +2,7 @@
     height: 70px;
 }
 
-.gap2{
+.gap2 {
     height: 20px;
 }
 
@@ -12,9 +12,10 @@
     font-size: 50px;
 }
 
-.heading span{
+.heading span {
     color: var(--font-color-2);
 }
+
 .cards {
     display: flex;
     justify-content: center;
@@ -30,13 +31,13 @@
     border-bottom: 2px solid var(--font-color-2);
 }
 
-.cards section article{
+.cards section article {
     overflow: scroll;
     margin: 20px;
     text-align: justify;
 }
 
-.cards section div > img {
+.cards section div>img {
     justify-content: center;
     height: 250px;
     margin-top: 30px;
@@ -59,6 +60,6 @@ article {
     width: 18px;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
 }
