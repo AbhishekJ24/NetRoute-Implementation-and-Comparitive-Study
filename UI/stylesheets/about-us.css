@@ -9,7 +9,7 @@
 .heading {
     text-align: center;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 75px;
 }
 
 .heading span {
@@ -19,6 +19,7 @@
 .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
 }
 

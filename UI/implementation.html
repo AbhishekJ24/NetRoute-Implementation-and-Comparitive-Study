@@ -24,6 +24,44 @@
         </div>
     </header>
     <div class="gap"></div>
+    <main>
+        <div class="main-cont">
+            <div class="heading">
+                Implement the Algorithm
+            </div>
+            <div class="gap2"></div>
+            <form action="/scripts/">
+                <div>
+                    Choose the algorithm to be implemented
+                </div>
+                <input type="radio" id="a*" name="algorithm-used" value="a*">
+                <label for="a*">A*</label>
+                <input type="radio" id="bellman-ford" name="algorithm-used" value="bellman-ford">
+                <label for="bellman-ford">Bellman Ford</label>
+                <input type="radio" id="dijkstra" name="algorithm-used" value="dijkstra">
+                <label for="dijkstra">Dijkstra</label>
+                <div class="gap2"></div>
+                <div>
+                    Choose the parameter to be used
+                </div>
+                <input type="radio" id="cost" name="parameter" value="cost">
+                <label for="cost">Cost</label>
+                <input type="radio" id="latency" name="parameter" value="latency">
+                <label for="latency">Latency</label>
+                <input type="radio" id="bandwidth" name="parameter" value="bandwidth">
+                <label for="bandwidth">Bandwidth</label>
+                <div class="gap2"></div>
+                <div>
+                    Upload the CSV file for the topology below <img src="/assets/svg/hover-imp.svg" alt="">
+                </div>
+                <div class="hover-imp">
+                    Use the following format: Source Name, Destination Name, Cost, Latency, Bandwidth, Status
+                </div>
+                <input type="file" id="input-csv-file">
+            </form>
+        </div>
+    </main>
+    <div class="gap"></div>
     <div class="gap"></div>
     <div class="gap"></div>
     <div class="gap"></div>

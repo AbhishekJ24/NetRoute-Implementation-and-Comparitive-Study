@@ -1,0 +1,46 @@
+.main-cont{
+    background-color: var(--navbar-footer-color);
+    width: 50vw;
+    height: 70vh;
+    margin: auto;
+    padding: 20px;
+    border-top: 2px solid var(--font-color-2);
+    border-bottom: 2px solid var(--font-color-2);
+    border-radius: 3%;
+}
+
+.main-cont .heading{
+    font-weight: 600;
+    color: var(--white);
+}
+
+.main-cont form{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.main-cont form div img{
+    width: 15px;
+}
+
+.main-cont form div{
+    padding: 2px;
+}
+
+.main-cont form label{
+    margin-right: 20px;
+}
+
+.hover-imp{
+    background-color: var(--hover-color-1);
+    width: 40vw;
+    margin: auto;
+    font-size: 20px;
+    position: absolute;
+    display: none;
+}
+
+.main-cont form div img:hover{
+    width: 15px;
+}

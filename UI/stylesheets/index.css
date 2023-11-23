@@ -7,6 +7,7 @@
     --font-color-2: #66FCF1;
     --hover-color-1: #45A29E;
     --hover-color-2: rgba(211, 211, 211, 0.2);
+    --white: white;
 }
 
 * {
@@ -32,6 +33,9 @@ body {
 
 .gap {
     height: 70px;
+}
+.gap2{
+    height: 20px;
 }
 
 .nav-bar {
