@@ -38,9 +38,5 @@
     margin: auto;
     font-size: 20px;
     position: absolute;
-    display: none;
-}
-
-.main-cont form div img:hover{
-    width: 15px;
+    visibility: hidden;
 }

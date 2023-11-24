@@ -10,6 +10,10 @@
     --white: white;
 }
 
+@media screen and (max-width: 815) {
+    
+}
+
 * {
     font-family: Poppins;
     margin: 0;
