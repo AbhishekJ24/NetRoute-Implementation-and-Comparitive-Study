@@ -67,7 +67,7 @@ body {
 .nav-bar ul li a {
     text-decoration: none;
     padding: 25px;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--font-color-1);
 }
 
