@@ -10,9 +10,7 @@
     --white: white;
 }
 
-@media screen and (max-width: 815) {
-    
-}
+@media screen and (max-width: 815) {}
 
 * {
     margin: 0;
@@ -38,7 +36,8 @@ body {
 .gap {
     height: 70px;
 }
-.gap2{
+
+.gap2 {
     height: 20px;
 }
 
