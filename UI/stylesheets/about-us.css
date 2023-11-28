@@ -21,6 +21,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
+    row-gap: 15px;
 }
 
 .cards section {
