@@ -5,7 +5,7 @@ import static Proj.Dijkstra.dijkstraShortestPath;
 import static Proj.BellmanFord.bellmanFordShortestPath;
 import static Proj.astar.aStarShortestPath;
 
-public class ShortestPathAlgorithm {
+public class driver {
     private static Map<String, Map<String, Integer>> graphCost = new HashMap<>();
     private static Map<String, Map<String, Integer>> graphLatency = new HashMap<>();
     private static Map<String, Map<String, Integer>> graphBandwidth = new HashMap<>();
