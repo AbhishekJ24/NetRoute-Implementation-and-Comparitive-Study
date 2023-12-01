@@ -1,11 +1,11 @@
-Source Name,Destination Name,Cost,Latency,Bandwidth,Status
-Source1,Source2,1,1,600,Active
-Source2,Source3,1,1,208,Active
-Source3,Source4,1,1,295,Active
-Source4,Source5,1,1,591,Inactive
-Source4,Source5,2,2,591,Active
-Source1,Source6,15,15,336,Active
-Source5,Source6,1,1,456,Active
-Source1,Source8,20,20,376,Active
-Source1,Source9,21,21,502,Inactive
-Source2,Source4,4,4,342,Active
+Source Name,Destination Name,Cost,Latency,Bandwidth,x,y,Status
+Source1,Source2,1,1,600,1,1,Active
+Source2,Source3,1,1,208,1,3,Active
+Source3,Source4,1,1,295,12,13,Active
+Source4,Source5,1,1,591,12,13,Inactive
+Source4,Source5,2,2,591,12,13,Active
+Source1,Source6,15,15,336,12,13,Active
+Source5,Source6,1,1,456,12,13,Active
+Source1,Source8,20,20,376,12,13,Active
+Source1,Source9,21,21,502,12,13,Inactive
+Source2,Source4,4,4,342,12,13,Active
