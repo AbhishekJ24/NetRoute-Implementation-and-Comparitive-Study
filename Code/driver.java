@@ -15,7 +15,7 @@ public class driver {
 
     public static void main(String[] args) {
         String csvOutputFile = "output.csv";
-        String csvFile = "input.csv";
+        String csvFile = "Code/input.csv";
 
         try (Scanner fileScanner = new Scanner(new File(csvFile))) {
             fileScanner.nextLine();
