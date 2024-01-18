@@ -14,7 +14,7 @@ public class driver {
     private static Map<String, Integer> yCoordinates = new HashMap<>(); // Initialize yCoordinates
 
     public static void main(String[] args) {
-        String csvOutputFile = "output.csv";
+        String csvOutputFile = "Code/output.csv";
         String csvFile = "Code/input.csv";
 
         try (Scanner fileScanner = new Scanner(new File(csvFile))) {
@@ -93,6 +93,7 @@ public class driver {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        scanner.close();
     }
 
     private static boolean isDijkstraOrBellmanFord(String algorithmChoice) {
