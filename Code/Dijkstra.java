@@ -1,14 +1,16 @@
-package Proj;
+package Code;
 
 import java.util.*;
+
 class Dijkstra {
-    public static List<String> dijkstraShortestPath(String source, String destination, Map<String, Map<String, Integer>> graph) {
+    public static List<String> dijkstraShortestPath(String source, String destination,
+            Map<String, Map<String, Integer>> graph) {
         Map<String, Integer> distances = new HashMap<>();
         Map<String, String> previous = new HashMap<>();
         Set<String> visited = new HashSet<>();
 
         for (String node : graph.keySet()) {
-             distances.put(node, Integer.MAX_VALUE);
+            distances.put(node, Integer.MAX_VALUE);
             previous.put(node, null);
         }
 
@@ -18,7 +20,8 @@ class Dijkstra {
             String current = minDistanceNode(distances, visited);
             visited.add(current);
 
-            if (!graph.containsKey(current)) continue;
+            if (!graph.containsKey(current))
+                continue;
 
             for (String neighbor : graph.get(current).keySet()) {
                 int parameter = graph.get(current).get(neighbor);
@@ -39,6 +42,7 @@ class Dijkstra {
         Collections.reverse(path);
         return path;
     }
+
     public static String minDistanceNode(Map<String, Integer> distances, Set<String> visited) {
         int minDistance = Integer.MAX_VALUE;
         String minNode = null;

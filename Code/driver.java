@@ -1,9 +1,10 @@
-package Proj;
+package Code;
+
 import java.io.*;
 import java.util.*;
-import static Proj.Dijkstra.dijkstraShortestPath;
-import static Proj.BellmanFord.bellmanFordShortestPath;
-import static Proj.astar.aStarShortestPath;
+import static Code.Dijkstra.dijkstraShortestPath;
+import static Code.BellmanFord.bellmanFordShortestPath;
+import static Code.astar.aStarShortestPath;
 
 public class driver {
     private static Map<String, Map<String, Integer>> graphCost = new HashMap<>();
@@ -48,12 +49,10 @@ public class driver {
         System.out.print("Choose algorithm (Dijkstra/Bellman-Ford/A*): ");
         String algorithmChoice = scanner.nextLine();
 
-
-
-
         // Creating output CSV file
         try (PrintWriter writer = new PrintWriter(new FileWriter(csvOutputFile))) {
-            writer.println("Source Node,Destination Node,Path" + (isDijkstraOrBellmanFord(algorithmChoice) ? ",Total" : ""));
+            writer.println(
+                    "Source Node,Destination Node,Path" + (isDijkstraOrBellmanFord(algorithmChoice) ? ",Total" : ""));
 
             // Move the parameter choice input outside the nested loop
             String parameterChoice = "";
@@ -70,13 +69,14 @@ public class driver {
                         case "dijkstra":
                         case "bellman-ford":
                             // Removed the parameter choice input from here
-                            path = algorithmChoice.equalsIgnoreCase("dijkstra") ?
-                                    dijkstraShortestPath(src, dest, getGraphByParameter(parameterChoice)) :
-                                    bellmanFordShortestPath(src, dest, getGraphByParameter(parameterChoice));
+                            path = algorithmChoice.equalsIgnoreCase("dijkstra")
+                                    ? dijkstraShortestPath(src, dest, getGraphByParameter(parameterChoice))
+                                    : bellmanFordShortestPath(src, dest, getGraphByParameter(parameterChoice));
                             totalParameter = calculateTotalParameter(path, getGraphByParameter(parameterChoice));
                             break;
                         case "a*":
-                            path = aStarShortestPath(src, dest, getGraphByParameter("Cost"), xCoordinates, yCoordinates);
+                            path = aStarShortestPath(src, dest, getGraphByParameter("Cost"), xCoordinates,
+                                    yCoordinates);
                             break;
                         default:
                             throw new IllegalArgumentException("Invalid algorithm choice.");
@@ -94,13 +94,12 @@ public class driver {
             e.printStackTrace();
         }
     }
+
     private static boolean isDijkstraOrBellmanFord(String algorithmChoice) {
         return "dijkstra".equalsIgnoreCase(algorithmChoice) || "bellman-ford".equalsIgnoreCase(algorithmChoice);
     }
 
-
-
-        private static Map<String, Map<String, Integer>> getGraphByParameter(String parameterChoice) {
+    private static Map<String, Map<String, Integer>> getGraphByParameter(String parameterChoice) {
         return switch (parameterChoice.toLowerCase()) {
             case "cost" -> graphCost;
             case "latency" -> graphLatency;
@@ -108,9 +107,6 @@ public class driver {
             default -> throw new IllegalArgumentException("Invalid parameter choice.");
         };
     }
-
-
-
 
     public static int calculateTotalParameter(List<String> path, Map<String, Map<String, Integer>> graph) {
         int totalParameter = 0;

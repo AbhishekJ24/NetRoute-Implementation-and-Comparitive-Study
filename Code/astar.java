@@ -1,8 +1,10 @@
-package Proj;
+package Code;
+
 import java.util.*;
+
 public class astar {
     static List<String> aStarShortestPath(String source, String destination, Map<String, Map<String, Integer>> graph,
-                                          Map<String, Integer> xCoordinates, Map<String, Integer> yCoordinates) {
+            Map<String, Integer> xCoordinates, Map<String, Integer> yCoordinates) {
         Map<String, Integer> gScores = new HashMap<>();
         Map<String, Integer> fScores = new HashMap<>();
         Map<String, String> previous = new HashMap<>();
@@ -40,7 +42,8 @@ public class astar {
                 if (gScores.get(neighbor) == null || tentativeGScore < gScores.get(neighbor)) {
                     previous.put(neighbor, current);
                     gScores.put(neighbor, tentativeGScore);
-                    fScores.put(neighbor, gScores.get(neighbor) + calculateEuclideanDistance(neighbor, destination, xCoordinates, yCoordinates));
+                    fScores.put(neighbor, gScores.get(neighbor)
+                            + calculateEuclideanDistance(neighbor, destination, xCoordinates, yCoordinates));
 
                     if (!priorityQueue.contains(neighbor)) {
                         priorityQueue.add(neighbor);
@@ -52,7 +55,8 @@ public class astar {
         return Collections.emptyList(); // No path found
     }
 
-    private static int calculateEuclideanDistance(String node1, String node2, Map<String, Integer> xCoordinates, Map<String, Integer> yCoordinates) {
+    private static int calculateEuclideanDistance(String node1, String node2, Map<String, Integer> xCoordinates,
+            Map<String, Integer> yCoordinates) {
         Integer x1 = xCoordinates.getOrDefault(node1, 0);
         Integer y1 = yCoordinates.getOrDefault(node1, 0);
         Integer x2 = xCoordinates.getOrDefault(node2, 0);
@@ -60,7 +64,6 @@ public class astar {
 
         return (int) Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
-
 
     private static List<String> reconstructPath(Map<String, String> previous, String current) {
         List<String> path = new ArrayList<>();
@@ -71,6 +74,5 @@ public class astar {
         Collections.reverse(path);
         return path;
     }
-
 
 }
