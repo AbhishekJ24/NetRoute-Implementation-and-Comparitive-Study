@@ -1,9 +1,9 @@
 Source Node,Destination Node,Path,Total
-Source2,Source4,Source2 -> Source4,342
-Source2,Source3,Source2 -> Source3,208
-Source1,Source2,Source1 -> Source2,600
-Source1,Source8,Source1 -> Source8,376
-Source1,Source6,Source1 -> Source6,336
-Source4,Source5,Source4 -> Source5,591
-Source3,Source4,Source3 -> Source4,295
-Source5,Source6,Source5 -> Source6,456
+Source2,Source4,Source2 -> Source3 -> Source4,2
+Source2,Source3,Source2 -> Source3,1
+Source1,Source2,Source1 -> Source2,1
+Source1,Source8,Source1 -> Source8,20
+Source1,Source6,Source1 -> Source2 -> Source3 -> Source4 -> Source5 -> Source6,6
+Source4,Source5,Source4 -> Source5,2
+Source3,Source4,Source3 -> Source4,1
+Source5,Source6,Source5 -> Source6,1
