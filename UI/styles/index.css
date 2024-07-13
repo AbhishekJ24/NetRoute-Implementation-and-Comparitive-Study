@@ -45,12 +45,14 @@ body {
     width: 100vw;
     font-weight: 400;
     background-color: var(--navbar-footer-color);
+    margin-bottom: 20px;
 
 }
 
 .nav-bar ul {
     display: flex;
     list-style: none;
+    margin-left: 40px;
     align-items: center;
 }
 
